@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DOM Selectors</title>
+    <style>
+      .bg-color {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="parent">
+    <div class="days">Monday</div>
+    <div class="days">Tuesday</div>
+    <div class="days">Wednesday</div>
+    <div class="days">Thursday</div>
+    <!-- <h1 id="title" class="heading">DOM Selectors Learning</h1>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      voluptatum.
+    </p>
+
+    <ul>
+      <li class="list-item">one</li>
+      <li class="list-item">two</li>
+      <li class="list-item">three</li>
+      <li class="list-item">four</li>
+    </ul> -->
+    <script>
+      const parent = document.querySelector(".parent");
+      for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+      }
+    </script>
+  </body>
+</html>

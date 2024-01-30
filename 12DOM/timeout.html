@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeout</title>
+  </head>
+  <body>
+    <h2 class="name">Tayyab</h2>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const change = function () {
+      document.querySelector("h2").innerHTML = "Abdullah";
+    };
+    const stop = setTimeout(change, 3000);
+    document.addEventListener("click", () => {
+      if (document.getElementById("stop")) {
+        clearTimeout(stop);
+        console.log("Stopped");
+      }
+    });
+  </script>
+</html>

@@ -195,3 +195,12 @@ let shoppingCart = [
 
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0);
 console.log(priceToPay);
+
+const arrayofEvenAndOdd = [
+  1, 2, 3, 4, 5, 6, 7, 7, 8, 9, 10, 11, 12, 13, 14, 15, 20,
+];
+
+const evenArray = arrayofEvenAndOdd.filter((item) => item % 2 === 0);
+console.log(evenArray);
+const oddArray = arrayofEvenAndOdd.filter((item) => item % 2 !== 0);
+console.log(oddArray);
