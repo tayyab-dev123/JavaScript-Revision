@@ -22,11 +22,11 @@ let users = [
 
 //forof
 
-// for (const user of users) {
-//   console.log(`User Name: ${user.name}`);
-// }
+for (const user of users) {
+  console.log(`User Name: ${user.name}`);
+}
 
-//Map
+Map;
 
 let countryMap = new Map();
 
@@ -36,20 +36,20 @@ countryMap.set("CAN", "Canada");
 countryMap.set("GBR", "United Kingdom");
 countryMap.set("AUS", "Australia");
 
-// for (const [key, value] of countryMap) {
-//   console.log(key, " ", value);
-// }
+for (const [key, value] of countryMap) {
+  console.log(key, " ", value);
+}
 
-// const userObj = {
-//     name: "John Doe",
-//     age: 25,
-//     email: "john.doe@example.com",
-//     isActive: true,
-//   };
+const userObj = {
+  name: "John Doe",
+  age: 25,
+  email: "john.doe@example.com",
+  isActive: true,
+};
 
-// for (const [key, value] of userObj) {
-//   console.log(key, " ", value);
-// } won't work
+for (const [key, value] of userObj) {
+  console.log(key, " ", value);
+} //won't work
 
 //for in
 
@@ -60,9 +60,9 @@ countryMap.set("AUS", "Australia");
 //   isActive: true,
 // };
 
-// for (const key in userObj) {
-//   console.log(`${key} corresponding value is ${userObj[key]}`);
-// }
+for (const key in userObj) {
+  console.log(`${key} corresponding value is ${userObj[key]}`);
+}
 
 //foreach
 
@@ -158,28 +158,28 @@ let booksArray = [
   },
 ];
 
-// let myFavBook = booksArray.filter(
-//   (bk) => bk.publishYear >= 1950 && bk.genre === "Fiction"
-// );
-// console.log(myFavBook);
+let myFavBook = booksArray.filter(
+  (bk) => bk.publishYear >= 1950 && bk.genre === "Fiction"
+);
+console.log(myFavBook);
 
 //Chaining
 let numbersArray = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
 
-// let myNum = numbersArray
-//   .map((num) => num * 10)
-//   .map((num) => num + 10)
-//   .filter((num) => num > 170);
+let myNum = numbersArray
+  .map((num) => num * 10)
+  .map((num) => num + 10)
+  .filter((num) => num > 170);
 
-// console.log(myNum);
+console.log(myNum);
 
-//Reduce
+Reduce;
 
-// let myTotal = numbersArray.reduce(function (acc, carval) {
-//   console.log(`${acc} ______ ${carval}`);
-//   return acc + carval;
-// }, 0);
-// console.log(myTotal);
+let myTotal = numbersArray.reduce(function (acc, carval) {
+  console.log(`${acc} ______ ${carval}`);
+  return acc + carval;
+}, 0);
+console.log(myTotal);
 
 let shoppingCart = [
   { itemName: "Laptop", price: 999.99, quantity: 2 },
